@@ -6,8 +6,8 @@
             <navigator></navigator>
         </div>
 
-        <div class="content">
-            <router-outlet></router-outlet>
+        <div #contentDiv class="content">
+            <router-outlet (activate)="scrollToTop(contentDiv)"></router-outlet>
         </div>
 
 
